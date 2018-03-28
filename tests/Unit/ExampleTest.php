@@ -2,18 +2,18 @@
 
 namespace Tests\Unit;
 
+use DDS\Entities\Project\Project;
+use DDS\Entities\Project\SETool;
+use DDS\Repository\ProjectRepository;
+use LaravelDoctrine\ORM\Facades\EntityManager;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ExampleTest extends TestCase
 {
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function testBasicTest()
-    {
-        $this->assertTrue(true);
+
+    public function testBasicTest() {
+        $projectRepository = new ProjectRepository();
+
+        dd($projectRepository->findAll());
     }
 }

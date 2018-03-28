@@ -150,16 +150,15 @@ return [
         /*
          * Package Service Providers...
          */
-        \Lisennk\Laravel\SlackWebApi\Providers\SlackApiServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        DDS\Providers\AppServiceProvider::class,
+        DDS\Providers\AuthServiceProvider::class,
+        // DDS\Providers\BroadcastServiceProvider::class,
+        DDS\Providers\EventServiceProvider::class,
+        DDS\Providers\RouteServiceProvider::class,
 
     ],
 
@@ -209,7 +208,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'SlackApi' => \Lisennk\Laravel\SlackWebApi\Facades\SlackApi::class
+
     ],
 
 ];
