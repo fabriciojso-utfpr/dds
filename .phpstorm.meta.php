@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-03-21 19:19:31.
+    * Generated on 2018-03-29 07:52:06.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -85,6 +85,7 @@ namespace PHPSTORM_META {
         'Illuminate\Console\Scheduling\ScheduleRunCommand' => \Illuminate\Console\Scheduling\ScheduleRunCommand::class,
         'command.storage.link' => \Illuminate\Foundation\Console\StorageLinkCommand::class,
         'command.up' => \Illuminate\Foundation\Console\UpCommand::class,
+        'command.view.cache' => \Illuminate\Foundation\Console\ViewCacheCommand::class,
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'command.app.name' => \Illuminate\Foundation\Console\AppNameCommand::class,
         'command.auth.make' => \Illuminate\Auth\Console\AuthMakeCommand::class,
@@ -219,6 +220,7 @@ namespace PHPSTORM_META {
         'Illuminate\Console\Scheduling\ScheduleRunCommand' => \Illuminate\Console\Scheduling\ScheduleRunCommand::class,
         'command.storage.link' => \Illuminate\Foundation\Console\StorageLinkCommand::class,
         'command.up' => \Illuminate\Foundation\Console\UpCommand::class,
+        'command.view.cache' => \Illuminate\Foundation\Console\ViewCacheCommand::class,
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'command.app.name' => \Illuminate\Foundation\Console\AppNameCommand::class,
         'command.auth.make' => \Illuminate\Auth\Console\AuthMakeCommand::class,
@@ -353,6 +355,7 @@ namespace PHPSTORM_META {
         'Illuminate\Console\Scheduling\ScheduleRunCommand' => \Illuminate\Console\Scheduling\ScheduleRunCommand::class,
         'command.storage.link' => \Illuminate\Foundation\Console\StorageLinkCommand::class,
         'command.up' => \Illuminate\Foundation\Console\UpCommand::class,
+        'command.view.cache' => \Illuminate\Foundation\Console\ViewCacheCommand::class,
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'command.app.name' => \Illuminate\Foundation\Console\AppNameCommand::class,
         'command.auth.make' => \Illuminate\Auth\Console\AuthMakeCommand::class,
@@ -487,6 +490,7 @@ namespace PHPSTORM_META {
         'Illuminate\Console\Scheduling\ScheduleRunCommand' => \Illuminate\Console\Scheduling\ScheduleRunCommand::class,
         'command.storage.link' => \Illuminate\Foundation\Console\StorageLinkCommand::class,
         'command.up' => \Illuminate\Foundation\Console\UpCommand::class,
+        'command.view.cache' => \Illuminate\Foundation\Console\ViewCacheCommand::class,
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'command.app.name' => \Illuminate\Foundation\Console\AppNameCommand::class,
         'command.auth.make' => \Illuminate\Auth\Console\AuthMakeCommand::class,
@@ -621,6 +625,7 @@ namespace PHPSTORM_META {
         'Illuminate\Console\Scheduling\ScheduleRunCommand' => \Illuminate\Console\Scheduling\ScheduleRunCommand::class,
         'command.storage.link' => \Illuminate\Foundation\Console\StorageLinkCommand::class,
         'command.up' => \Illuminate\Foundation\Console\UpCommand::class,
+        'command.view.cache' => \Illuminate\Foundation\Console\ViewCacheCommand::class,
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'command.app.name' => \Illuminate\Foundation\Console\AppNameCommand::class,
         'command.auth.make' => \Illuminate\Auth\Console\AuthMakeCommand::class,
@@ -755,6 +760,7 @@ namespace PHPSTORM_META {
         'Illuminate\Console\Scheduling\ScheduleRunCommand' => \Illuminate\Console\Scheduling\ScheduleRunCommand::class,
         'command.storage.link' => \Illuminate\Foundation\Console\StorageLinkCommand::class,
         'command.up' => \Illuminate\Foundation\Console\UpCommand::class,
+        'command.view.cache' => \Illuminate\Foundation\Console\ViewCacheCommand::class,
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'command.app.name' => \Illuminate\Foundation\Console\AppNameCommand::class,
         'command.auth.make' => \Illuminate\Auth\Console\AuthMakeCommand::class,
@@ -889,6 +895,7 @@ namespace PHPSTORM_META {
         'Illuminate\Console\Scheduling\ScheduleRunCommand' => \Illuminate\Console\Scheduling\ScheduleRunCommand::class,
         'command.storage.link' => \Illuminate\Foundation\Console\StorageLinkCommand::class,
         'command.up' => \Illuminate\Foundation\Console\UpCommand::class,
+        'command.view.cache' => \Illuminate\Foundation\Console\ViewCacheCommand::class,
         'command.view.clear' => \Illuminate\Foundation\Console\ViewClearCommand::class,
         'command.app.name' => \Illuminate\Foundation\Console\AppNameCommand::class,
         'command.auth.make' => \Illuminate\Auth\Console\AuthMakeCommand::class,
