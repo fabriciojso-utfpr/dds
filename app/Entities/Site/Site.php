@@ -46,6 +46,13 @@ class Site {
      */
     private $geocoors;
 
+    /**
+     * Projeto que a equipe pertence.
+     *
+     * @ORM\ManyToOne(targetEntity="DDS\Entities\Project\Project", cascade={"persist"})
+     */
+    private $project;
+
 
     public function getId() {
         return $this->id;
