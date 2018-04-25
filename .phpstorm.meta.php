@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-03-27 19:51:44.
+    * Generated on 2018-04-18 20:14:11.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -39,6 +39,8 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
+        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'graphql' => \Folklore\GraphQL\GraphQL::class,
         'LaravelDoctrine\ORM\Configuration\Cache\CacheManager' => \LaravelDoctrine\ORM\Configuration\Cache\CacheManager::class,
         'LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager' => \LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager::class,
@@ -181,6 +183,8 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
+        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'graphql' => \Folklore\GraphQL\GraphQL::class,
         'LaravelDoctrine\ORM\Configuration\Cache\CacheManager' => \LaravelDoctrine\ORM\Configuration\Cache\CacheManager::class,
         'LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager' => \LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager::class,
@@ -323,6 +327,8 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
+        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'graphql' => \Folklore\GraphQL\GraphQL::class,
         'LaravelDoctrine\ORM\Configuration\Cache\CacheManager' => \LaravelDoctrine\ORM\Configuration\Cache\CacheManager::class,
         'LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager' => \LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager::class,
@@ -465,6 +471,8 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
+        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'graphql' => \Folklore\GraphQL\GraphQL::class,
         'LaravelDoctrine\ORM\Configuration\Cache\CacheManager' => \LaravelDoctrine\ORM\Configuration\Cache\CacheManager::class,
         'LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager' => \LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager::class,
@@ -607,6 +615,8 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
+        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'graphql' => \Folklore\GraphQL\GraphQL::class,
         'LaravelDoctrine\ORM\Configuration\Cache\CacheManager' => \LaravelDoctrine\ORM\Configuration\Cache\CacheManager::class,
         'LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager' => \LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager::class,
@@ -749,6 +759,8 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
+        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'graphql' => \Folklore\GraphQL\GraphQL::class,
         'LaravelDoctrine\ORM\Configuration\Cache\CacheManager' => \LaravelDoctrine\ORM\Configuration\Cache\CacheManager::class,
         'LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager' => \LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager::class,
@@ -891,6 +903,8 @@ namespace PHPSTORM_META {
         'view' => \Illuminate\View\Factory::class,
         'view.finder' => \Illuminate\View\FileViewFinder::class,
         'view.engine.resolver' => \Illuminate\View\Engines\EngineResolver::class,
+        'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
+        'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'graphql' => \Folklore\GraphQL\GraphQL::class,
         'LaravelDoctrine\ORM\Configuration\Cache\CacheManager' => \LaravelDoctrine\ORM\Configuration\Cache\CacheManager::class,
         'LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager' => \LaravelDoctrine\ORM\Configuration\MetaData\MetaDataManager::class,

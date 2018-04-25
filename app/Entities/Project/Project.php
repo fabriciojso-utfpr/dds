@@ -2,6 +2,8 @@
 
 namespace DDS\Entities\Project;
 
+use DDS\Entities\Communication\CommunicationUnit;
+use DDS\Entities\Site\Site;
 use DDS\Entities\Traits\SEToolsTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
@@ -30,9 +32,18 @@ class Project {
      */
     private $description;
 
+    /**
+     * @var Site[]
+     *
+     * @ORM\OneToMany(targetEntity="DDS\Entities\Site\Site", mappedBy="project", cascade={"persist", "remove"})
+     */
+    private $sites;
+
+
 
     public function __construct() {
         $this->SETools = new ArrayCollection();
+        $this->sites = new ArrayCollection();
     }
 
     public function getDescription() {
@@ -43,4 +54,14 @@ class Project {
         $this->description = $description;
         return $this;
     }
+
+    public function addSite(Site $site){
+        $this->sites->add($site);
+        return $this;
+    }
+
+    public function listSites(){
+        return $this->sites;
+    }
+
 }

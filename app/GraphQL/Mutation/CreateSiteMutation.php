@@ -29,11 +29,11 @@ class CreateSiteMutation extends Mutation
                 'description'=>'Descrição da equipe.'
             ],
             'timezone'=>[
-                'type'=>Type::string(),
+                'type'=>Type::nonNull(Type::string()),
                 'description'=>'Timezone da equipe.'
             ],
             'geocoors'=>[
-                'type'=>Type::string(),
+                'type'=>Type::nonNull(Type::string()),
                 'description'=>'ordenadas geográfica (latitude, longitude) da localização da equipe.'
             ],
         ];

@@ -36,6 +36,13 @@ class Collaborator implements Host {
      */
     private $email;
 
+    /**
+     * @var Site
+     * @ORM\ManyToOne(targetEntity="DDS\Entities\Site\Site", inversedBy="collaborators", cascade={"persist", "remove"})
+     */
+    private $site;
+
+
     public function getId() {
         return $this->id;
     }
@@ -57,4 +64,14 @@ class Collaborator implements Host {
         $this->email = $email;
         return $this;
     }
+
+    public function getSite() {
+        return $this->site;
+    }
+
+    public function setSite(Site $site) {
+        $site->addCollaborator($this);
+        $this->site = $site;
+    }
+
 }

@@ -2,10 +2,13 @@
 
 namespace DDS\Entities\Site;
 
+use DDS\Entities\Communication\CommunicationUnit;
+use DDS\Entities\Project\Project;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="SiteRepository")
  * @ORM\Table(name="sites")
  */
 class Site {
@@ -47,12 +50,27 @@ class Site {
     private $geocoors;
 
     /**
-     * Projeto que a equipe pertence.
-     *
-     * @ORM\ManyToOne(targetEntity="DDS\Entities\Project\Project", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="Collaborator", mappedBy="site", cascade={"persist", "remove"})
+     */
+    private $collaborators;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="DDS\Entities\Project\Project", inversedBy="sites", cascade={"persist", "remove"})
      */
     private $project;
 
+    /**
+     * @var CommunicationUnit[]
+     *
+     * @ORM\ManyToMany(targetEntity="DDS\Entities\Communication\CommunicationUnit", cascade={"persist", "remove"})
+     */
+    private $units;
+
+
+    public function __construct() {
+        $this->collaborators = new ArrayCollection();
+        $this->units = new ArrayCollection();
+    }
 
     public function getId() {
         return $this->id;
@@ -97,6 +115,35 @@ class Site {
         return $this;
     }
 
+
+    public function addCollaborator(Collaborator $collaborator) {
+        $this->collaborators->add($collaborator);
+        return $this;
+    }
+
+    public function listCollaborators() {
+        return $this->collaborators;
+    }
+
+    public function getProject() {
+        return $this->project;
+    }
+
+
+    public function setProject(Project $project) {
+        $this->project = $project;
+        $project->addSite($this);
+    }
+
+
+    public function addCommunicationUnit(CommunicationUnit $unit){
+        $this->units->add($unit);
+        return $this;
+    }
+
+    public function listCommunicationUnits(){
+        return $this->units;
+    }
 
 
 }

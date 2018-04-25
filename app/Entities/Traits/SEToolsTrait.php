@@ -13,9 +13,9 @@ trait SEToolsTrait {
      * Ferramentas de engenharia de softwares que estão sendo utilizadas pelo colaborador.
      *
      * @var SETool[] | ArrayCollection
-     * @ORM\ManyToMany(targetEntity="DDS\Entities\Project\SETool", cascade={"persist"})
+     * @ORM\ManyToMany(targetEntity="DDS\Entities\Project\SETool", cascade={"persist", "remove"})
      */
-    protected $SETools;
+    protected $SETools = null;
 
     public function addSETool(SETool $SETool) {
         $this->init();
@@ -29,7 +29,7 @@ trait SEToolsTrait {
     }
 
     private function init() {
-        if (empty($this->SETools)) {
+        if ($this->SETools == null) {
             $this->SETools = new ArrayCollection();
         }
     }
