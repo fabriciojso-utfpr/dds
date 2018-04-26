@@ -5,6 +5,6 @@ Route::get('/code', "AuthenticatorController@code");
 
 Route::get('/monitor', "MonitorController@index");
 
-Route::get(function(){
+Route::get('/lista', function(){
     dd(User::all());
 });
