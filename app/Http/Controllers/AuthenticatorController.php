@@ -16,6 +16,7 @@ class AuthenticatorController extends Controller
         ]);
     }
 
+
     public function code(Request $request){
         $code = $request->get('code');
 
