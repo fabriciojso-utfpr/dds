@@ -44,7 +44,7 @@ class Code
         }catch (SlackApiException $exception){
             dd($exception->getMessage());
         }
-
+dd($token->access_token);
         $this->user->slack_id = $user_data['id'];
         $this->user->slack_token = $token->access_token;
         $this->user->name = $user_data['real_name'];
@@ -54,5 +54,6 @@ class Code
 
         return $this->user;
     }
+    
 
 }
